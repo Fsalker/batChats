@@ -1,0 +1,10 @@
+.message {
+  width: 32px;
+  display: inline;
+  margin-bottom: 2px;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+}
