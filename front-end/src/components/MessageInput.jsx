@@ -9,16 +9,17 @@ export const MessageInput = ({ addNewMessage }) => {
     }
   };
   const sendMessage = () => {
-    addNewMessage({
-      ID: Math.floor(Math.random() * 65536),
-      createdAt: new Date().getTime(),
-      message: value,
-      author: {
-        ID: 1250,
-        name: "Andrei Puiu (in-browser)",
-        icon: "userIcon.png",
-      },
-    });
+    addNewMessage(value);
+    // addNewMessage({
+    //   ID: Math.floor(Math.random() * 65536),
+    //   createdAt: new Date().getTime(),
+    //   message: value,
+    //   author: {
+    //     ID: 1250,
+    //     name: "Andrei Puiu (in-browser)",
+    //     icon: "userIcon.png",
+    //   },
+    // });
     setValue("");
   };
 

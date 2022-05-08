@@ -6,7 +6,7 @@ export const MessageList = ({ messages }) => {
   // const [isLoading, setLoading] = useState(false);
 
   const Messages = messages.map((message) => (
-    <Message key={`key-message-${message.ID}`} message={message} />
+    <Message key={`key-message-${message._id}`} message={message} />
   ));
   return <div>{Messages}</div>;
 };
